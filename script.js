@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((response) => response.json())
     .then((data) => data.forEach(renderKittens))
     
+    
     // grab dropdown
     const kittenColorDropDown = document.getElementById("kitten-color");
 
@@ -25,9 +26,11 @@ document.addEventListener("DOMContentLoaded", () => {
         result.forEach(renderKittens);
 
     })
+    
 
     // renders kitten images to DOM with cards and like buttons
     function renderKittens(kitten) {
+
 
         // push all kitten data to allKittens array
         allKittens.push(kitten);
@@ -97,9 +100,24 @@ document.addEventListener("DOMContentLoaded", () => {
             kittenImg.setAttribute("id", `favorite-kitten${kitten.id}`);
         }
 
-        // create button that upon mouseover changes background to dark mode
-        function darkMode() {
+        // highlights each kitten card upon mouseover
+        function highlightKittensText() {
+
+            // grab "Kittens!" text element
+            const h1 = document.getElementById("kittens");
             
+            // add mouseover event changing text color to white on hover
+            h1.addEventListener("mouseover", event => {
+                h1.style.color = "white";
+            });
+
+            //add mouseout event changing text color back to black when removing mouse pointer
+            h1.addEventListener("mouseout", event => {
+                h1.style.color = "black";
+            });
         }
+
+        // call highlight function
+        highlightKittensText();
     }
 })
