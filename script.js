@@ -16,8 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     kittenColorDropDown.addEventListener("change", (event) => {
         const result = allKittens.filter(kitten => kitten.color === event.target.value);
-        let kittenCollection = document.getElementById("kitten-collection");
-        kittenCollection.textContent = "";
+        let allKittensCollection = document.getElementById("kitten-collection");
+        allKittensCollection.textContent = "";
         result.forEach(renderKittens);
 
     })
@@ -29,8 +29,8 @@ document.addEventListener("DOMContentLoaded", () => {
         let card = document.createElement("div");
         card.classList.add("card");
         
-        let kittenCollection = document.getElementById("kitten-collection");
-        kittenCollection.appendChild(card);
+        let allKittensCollection = document.getElementById("kitten-collection");
+        allKittensCollection.appendChild(card);
         
         let kittenImg = document.createElement("img");
         kittenImg.src = `${kitten.image}`;
