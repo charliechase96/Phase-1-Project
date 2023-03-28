@@ -31,6 +31,7 @@ img {
     align-items: center;
     display: inline-grid;
     border-radius: 10px;
+    box-shadow: 7px 5px 5px gray;
 }
 
 .sort-kitten-form {
@@ -38,8 +39,10 @@ img {
     margin: 7px;
     padding: 10px 10px 10px 10px;
     border-radius: 10px;
+    box-shadow: 7px 5px 5px gray;
 }
 
 .like-btn {
-    border-radius: 10px;
+    border-radius: 7px;
+    box-shadow: 5px 3px 3px gray;
 }
