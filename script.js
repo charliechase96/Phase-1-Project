@@ -38,6 +38,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 
                 let favoriteKittensArea = document.getElementById("favorite-kittens");
                 let favoriteKittens = [];
+
+                if (kittenImg.childNodes.textContent === FULL_HEART) {
+                    console.log(kittenImg);
+                }
             }
         }
 )

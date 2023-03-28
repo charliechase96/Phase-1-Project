@@ -26,7 +26,8 @@ img {
     width: 275px;
     height: 325px;
     padding: 10px 10px 10px 10px;
-    margin: 10px;
+    margin: 7px;
     background-color: lavenderblush;
     align-items: center;
+    display: inline-grid;
 }
