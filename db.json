@@ -1,0 +1,154 @@
+{
+    "kittens": [
+        {
+            "id": 1,
+            "color": "orange",
+            "image": "https://images.squarespace-cdn.com/content/v1/5c6494bbf4e5310e57b3de34/1623557067947-PN4CQHL8B84UEXR4K9CP/Capture.PNG"
+        },
+        {
+            "id": 2,
+            "color": "black",
+            "image": "https://www.purina.co.uk/sites/default/files/2022-09/GettyImages-539827936%20%281%29%20%281%29%20%281%29.jpg"
+        },
+        {
+            "id": 3,
+            "color": "tuxedo",
+            "image": "https://t3.ftcdn.net/jpg/03/58/85/54/360_F_358855467_5HoAdXvCLP7E1kx1i5grvGvyzPCMWLUS.jpg"
+        },
+        {
+            "id": 4,
+            "color": "white",
+            "image": "https://st.depositphotos.com/1784673/1318/i/450/depositphotos_13185368-stock-photo-white-kitten-with-blue-eyes.jpg"
+        },
+        {
+            "id": 5,
+            "color": "orange",
+            "image": "https://preview.redd.it/vsze5rkvcmt71.jpg?width=640&crop=smart&auto=webp&s=509a690ad84e8f6e07a3159275570ca72dc82fe0"
+        },
+        {
+            "id": 6,
+            "color": "orange",
+            "image": "https://i0.wp.com/www.onegreenplanet.org/wp-content/uploads/2022/10/shutterstock_1758551894-scaled-e1667263092851.jpg?fit=1600%2C1067&ssl=1"
+        },
+        {
+            "id": 7,
+            "color": "gray",
+            "image": "https://media.istockphoto.com/id/1086004080/photo/gray-british-cat-kitten.jpg?s=612x612&w=0&k=20&c=9YJBlLm_KUGvwjApck6z8DAYjV9qOl3ZnzHz7X7T1Lk="
+        },
+        {
+            "id": 8,
+            "color": "black",
+            "image": "https://s.yimg.com/ny/api/res/1.2/8IscVVG3DupptlPp3mvhBA--/YXBwaWQ9aGlnaGxhbmRlcjtoPTY2Ng--/https://media.zenfs.com/en/the_huffington_post_584/b476a73c889cc41648561445f234f09a"
+        },
+        {
+            "id": 9,
+            "color": "white",
+            "image": "https://images.unsplash.com/photo-1558674378-f2891e685806?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHdoaXRlJTIwa2l0dGVufGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+        },
+        {
+            "id": 10,
+            "color": "tuxedo",
+            "image": "https://wallpapercave.com/wp/wp8693742.jpg"
+        },
+        {
+            "id": 11,
+            "color": "orange",
+            "image": "https://media.istockphoto.com/id/149866992/photo/cute-orange-kitten-with-large-paws.jpg?s=612x612&w=0&k=20&c=ld3UDK8Iq4DhoO54drP2bCPPLI8fMWsd5bqbuTHSUso="
+        },
+        {
+            "id": 12,
+            "color": "tuxedo",
+            "image": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/tuxedo-black-and-white-kitten-sitting-and-watching-zina-stromberg.jpg"
+        },
+        {
+            "id": 13,
+            "color": "white",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/White_kitten.jpg/1280px-White_kitten.jpg"
+        },
+        {
+            "id": 14,
+            "color": "tuxedo",
+            "image": "https://img.myloview.com/posters/small-black-and-white-tuxedo-kitten-sitting-on-a-wood-floor-behind-a-small-pedestal-table-with-a-tiny-bowl-of-kitten-bite-sized-food-one-paw-reaching-up-looking-directly-at-viewer-blue-background-700-206339184.jpg"
+        },
+        {
+            "id": 15,
+            "color": "black",
+            "image": "https://s3-us-west-1.amazonaws.com/assets.wagwalkingweb.com/media/daily_wag/blog_articles/body/1666237780.2354116/10-interesting-facts-about-black-cats-6.png"
+        },
+        {
+            "id": 16,
+            "color": "white",
+            "image": "https://c4.wallpaperflare.com/wallpaper/65/507/816/animal-baby-blue-cat-wallpaper-preview.jpg"
+        },
+        {
+            "id": 17,
+            "color": "tuxedo",
+            "image": "https://rlv.zcache.com/cute_black_and_white_tuxedo_kitten_postcard-r5d25b0c2ef6243158468fc900a68f981_ucbjp_736.webp"
+        },
+        {
+            "id": 18,
+            "color": "orange",
+            "image": "https://d1dd4ethwnlwo2.cloudfront.net/wp-content/uploads/2022/02/dexter2.jpg"
+        },
+        {
+            "id": 19,
+            "color": "tuxedo",
+            "image": "https://images.squarespace-cdn.com/content/v1/59bd3cc646c3c4ee197be5fd/1581315745775-YRF48B7EF95QMOZ3YU86/View+album+%E2%80%9CRecents%E2%80%9D.png"
+        },
+        {
+            "id": 20,
+            "color": "black",
+            "image": "https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/61LLhx0YtdL._AC_UF1000,1000_QL80_.jpg"
+        },
+        {
+            "id": 21,
+            "color": "black",
+            "image": "https://wallpapercave.com/wp/wp7125407.jpg"
+        },
+        {
+            "id": 22,
+            "color": "black",
+            "image": "https://d3bzyjrsc4233l.cloudfront.net/news/Cat_KIoDFtv.png"
+        },
+        {
+            "id": 23,
+            "color": "white",
+            "image": "https://i.ytimg.com/vi/6ocNNEqYGVE/maxresdefault.jpg"
+        },
+        {
+            "id": 24,
+            "color": "gray",
+            "image": "https://thumbs.dreamstime.com/b/funny-grey-kitten-25830797.jpg"
+        },
+        {
+            "id": 25,
+            "color": "gray",
+            "image": "https://media.istockphoto.com/id/106519096/photo/small-gray-kitten-with-tail-up-walking-on-the-grass.jpg?s=612x612&w=0&k=20&c=ZWi3g-bnx6KelJaKGxbOutkLoNiRN4pSKDB79PjFyw0="
+        },
+        {
+            "id": 26,
+            "color": "orange",
+            "image": "https://c8.alamy.com/zooms/9/290d291c3a484280a0227503ccff4a37/k5ydkw.jpg"
+        },
+        {
+            "id": 27,
+            "color": "tuxedo",
+            "image": "https://st3.depositphotos.com/28355046/37191/i/600/depositphotos_371911598-stock-photo-adorable-tiny-black-white-tuxedo.jpg"
+        },
+        {
+            "id": 28,
+            "color": "white",
+            "image": "https://www.warrenphotographic.co.uk/photgraphy/bigs/42920-white-kitten-on-grey-background.jpg"
+        },
+        {
+            "id": 29,
+            "color": "black",
+            "image": "https://t4.ftcdn.net/jpg/00/27/28/53/360_F_27285384_8LJjymKkNAqk2CDpquWKN2PobzBh4FD3.jpg"
+        },
+        {
+            "id": 30,
+            "color": "orange",
+            "image": "https://www.hartz.com/wp-content/uploads/2021/10/Is-He-Really-an-Orphaned-Kitten-1.jpg"
+        }
+    ]
+}
