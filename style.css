@@ -41,6 +41,7 @@ img {
     border-radius: 10px;
     box-shadow: 7px 5px 5px gray;
     outline: 2px solid rgb(141, 112, 187);
+    text-align: center;
 }
 
 .like-btn {
