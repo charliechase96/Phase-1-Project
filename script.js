@@ -65,14 +65,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         
         function renderFavoriteKitten(kitten) {
-            // let favoriteKittensArea = document.getElementById("favorite-kittens");
-            // let card = document.createElement("div");
-            // card.classList.add("card");
-            // favoriteKittensArea.append(card);
-            // const image = document.createElement("img");
-            // image.id = `${kitten.image}`;
-            // image.src = kitten.image;
-            // card.append(image);
 
             let card = document.createElement("div");
             card.classList.add("card");
