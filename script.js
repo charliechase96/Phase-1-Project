@@ -6,29 +6,46 @@ document.addEventListener("DOMContentLoaded", () => {
     .then((response) => response.json())
     .then((data) => data.forEach(renderKittens))
 
-        function renderKittens(kitten) {
+    function renderKittens(kitten) {
+
+            let allKittens = [];
+            allKittens.push(kitten);
+            
             let card = document.createElement("div");
             card.classList.add("card");
             
             let kittenCollection = document.getElementById("kitten-collection");
             kittenCollection.appendChild(card);
-
+            
             let kittenImg = document.createElement("img");
             kittenImg.src = `${kitten.image}`;
             card.appendChild(kittenImg);
             kittenImg.classList.add("kitten-avatar");
             kittenImg.setAttribute("id", `kitten${kitten.id}`);
-
+            
             let likeButton = document.createElement("button");
             likeButton.addEventListener("click", (event) => {
                 addLike(event, kitten);
             })
-
+            
             likeButton.classList.add("like-btn");
             likeButton.setAttribute("id", `${kitten.id}`);
             likeButton.textContent = EMPTY_HEART;
             card.appendChild(likeButton);
 
+            allKittens.forEach(sortKittens);
+            console.log(sortedkittens)
+            // below function was supposed to push kittens to array but does nothing
+            
+            function sortKittens(allKittens) {
+                let sortedKittens = [];
+                let kittenColor = document.getElementById("kitten-color").value;
+
+                    if (kitten.color === kittenColor) {
+                        sortedKittens.push(kitten);
+                    }
+                }
+            
             function addLike(event, kitten) {
                 if (event.target.textContent === EMPTY_HEART) {
                     event.target.textContent = FULL_HEART;
@@ -39,20 +56,14 @@ document.addEventListener("DOMContentLoaded", () => {
                     const selectedImage = (document.getElementById(`${kitten.image}`));
                     selectedImage.remove();
                 }
-                }
-                
+            }
+            
             function renderFavoriteKitten(kitten) {
                 let favoriteKittensArea = document.getElementById("favorite-kittens");
-                    const image = document.createElement("img");
-                    image.id = `${kitten.image}`;
-                    image.src = kitten.image;
-                    favoriteKittensArea.append(image);
-                }
-            // function sortKittens(kittens) {
-            //     let sortedKittens = [];
-            //     let kittenColor = document.getElementById("kitten-color");
-            // }
-
-            // sortKittens();
+                const image = document.createElement("img");
+                image.id = `${kitten.image}`;
+                image.src = kitten.image;
+                favoriteKittensArea.append(image);
             }
+        }
 })
