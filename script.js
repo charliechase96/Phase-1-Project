@@ -48,6 +48,11 @@ document.addEventListener("DOMContentLoaded", () => {
                     image.src = kitten.image;
                     favoriteKittensArea.append(image);
                 }
+            // function sortKittens(kittens) {
+            //     let sortedKittens = [];
+            //     let kittenColor = document.getElementById("kitten-color");
+            // }
+
+            // sortKittens();
             }
-        }
-)
+})
