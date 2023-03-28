@@ -1,5 +1,6 @@
 const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
+const allKittens = [];
 
 document.addEventListener("DOMContentLoaded", () => {
     fetch("http://localhost:3000/kittens")
@@ -8,8 +9,42 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function renderKittens(kitten) {
 
-            let allKittens = [];
+            const orangeKittens = [];
+            const blackKittens = [];
+            const whiteKittens = [];
+            const grayKittens = [];
+            const tuxedoKittens = [];
+
             allKittens.push(kitten);
+
+            allKittens.filter(sortKittens);
+            // console.log(orangeKittens);
+            // console.log(blackKittens);
+            // console.log(whiteKittens);
+            console.log(grayKittens);
+            // console.log(tuxedoKittens);
+            
+            function sortKittens(kitten) {
+                let kittenColor = document.getElementById("kitten-color").value;
+
+                if (kitten.color === "orange") {
+                    orangeKittens.push(kitten);
+                }
+                else if (kitten.color === "black") {
+                    blackKittens.push(kitten);
+                }
+                else if (kitten.color === "white") {
+                    whiteKittens.push(kitten);
+                }
+                else if (kitten.color === "gray") {
+                    grayKittens.push(kitten);
+                }
+                else if (kitten.color === "tuxedo") {
+                    tuxedoKittens.push(kitten);
+                }
+            }
+            
+            
             
             let card = document.createElement("div");
             card.classList.add("card");
@@ -32,19 +67,10 @@ document.addEventListener("DOMContentLoaded", () => {
             likeButton.setAttribute("id", `${kitten.id}`);
             likeButton.textContent = EMPTY_HEART;
             card.appendChild(likeButton);
-
-            allKittens.forEach(sortKittens);
-            console.log(sortedkittens)
-            // below function was supposed to push kittens to array but does nothing
             
-            function sortKittens(allKittens) {
-                let sortedKittens = [];
-                let kittenColor = document.getElementById("kitten-color").value;
+            // below function was supposed to push kittens to array but does nothing
 
-                    if (kitten.color === kittenColor) {
-                        sortedKittens.push(kitten);
-                    }
-                }
+            
             
             function addLike(event, kitten) {
                 if (event.target.textContent === EMPTY_HEART) {
