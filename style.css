@@ -30,4 +30,16 @@ img {
     background-color: lavenderblush;
     align-items: center;
     display: inline-grid;
+    border-radius: 10px;
+}
+
+.sort-kitten-form {
+    background-color: lavenderblush;
+    margin: 7px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+}
+
+.like-btn {
+    border-radius: 10px;
 }
