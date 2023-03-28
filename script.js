@@ -56,20 +56,36 @@ document.addEventListener("DOMContentLoaded", () => {
             }
             else {
                 event.target.textContent = EMPTY_HEART;
-                const selectedImage = (document.getElementById(`${kitten.image}`));
+                const selectedImage = (document.getElementById(`favorite-kitten${kitten.id}`));
+                const selectedKittenCard = document.getElementById(`favorite-kitten-card${kitten.id}`);
+                selectedKittenCard.remove();
                 selectedImage.remove();
+                
             }
         }
         
         function renderFavoriteKitten(kitten) {
-            let favoriteKittensArea = document.getElementById("favorite-kittens");
+            // let favoriteKittensArea = document.getElementById("favorite-kittens");
+            // let card = document.createElement("div");
+            // card.classList.add("card");
+            // favoriteKittensArea.append(card);
+            // const image = document.createElement("img");
+            // image.id = `${kitten.image}`;
+            // image.src = kitten.image;
+            // card.append(image);
+
             let card = document.createElement("div");
-            favoriteKittensArea.append(card);
             card.classList.add("card");
-            const image = document.createElement("img");
-            image.id = `${kitten.image}`;
-            image.src = kitten.image;
-            card.append(image);
+            card.setAttribute("id", `favorite-kitten-card${kitten.id}`);
+        
+            let favoriteKittensArea = document.getElementById("favorite-kittens");
+            favoriteKittensArea.appendChild(card);
+        
+            let kittenImg = document.createElement("img");
+            kittenImg.src = `${kitten.image}`;
+            card.appendChild(kittenImg);
+            kittenImg.classList.add("kitten-avatar");
+            kittenImg.setAttribute("id", `favorite-kitten${kitten.id}`);
         }
     }
     
