@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
             kittenImg.src = `${kitten.image}`;
             card.appendChild(kittenImg);
             kittenImg.classList.add("kitten-avatar");
-            kittenImg.setAttribute("id", `${kitten.id}`);
+            kittenImg.setAttribute("id", `kitten${kitten.id}`);
 
             let likeButton = document.createElement("button");
             likeButton.addEventListener("click", (event) => {
@@ -35,8 +35,9 @@ document.addEventListener("DOMContentLoaded", () => {
                     event.target.textContent = EMPTY_HEART;
                 }
                 }
+                
+                let favoriteKittensArea = document.getElementById("favorite-kittens");
+                let favoriteKittens = [];
             }
-            
-            let favoriteKittens = document.getElementById("favorite-kittens");
         }
 )
