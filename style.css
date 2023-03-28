@@ -23,6 +23,10 @@ img {
 
 .card {
     float: left;
-    width: 25%;
-    padding: 0 10px;
+    width: 275px;
+    height: 325px;
+    padding: 10 10px;
+    margin: 10px;
+    background-color: white;
+    align-items: center;
 }
