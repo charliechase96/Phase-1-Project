@@ -108,7 +108,7 @@ document.addEventListener("DOMContentLoaded", () => {
             
             // add mouseover event changing text color to white on hover
             h1.addEventListener("mouseover", event => {
-                h1.style.color = "white";
+                h1.style.color = "MediumPurple";
             });
 
             //add mouseout event changing text color back to black when removing mouse pointer
