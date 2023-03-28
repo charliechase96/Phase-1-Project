@@ -50,3 +50,13 @@ img {
     box-shadow: 5px 3px 3px gray;
     background-color: rgb(222, 222, 222, 1.0);
 }
+
+.dark-mode-form {
+    background-color: lavenderblush;
+    margin: 7px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    box-shadow: 7px 5px 5px gray;
+    outline: 2px solid rgb(141, 112, 187);
+    text-align: center;
+}

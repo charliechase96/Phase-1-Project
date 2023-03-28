@@ -96,5 +96,10 @@ document.addEventListener("DOMContentLoaded", () => {
             kittenImg.classList.add("kitten-avatar");
             kittenImg.setAttribute("id", `favorite-kitten${kitten.id}`);
         }
+
+        // create button that upon mouseover changes background to dark mode
+        function darkMode() {
+            
+        }
     }
 })
