@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             let likeButton = document.createElement("button");
             likeButton.addEventListener("click", (event) => {
-                addLike(event);
+                addLike(event, kitten);
             })
 
             likeButton.classList.add("like-btn");
@@ -29,19 +29,25 @@ document.addEventListener("DOMContentLoaded", () => {
             likeButton.textContent = EMPTY_HEART;
             card.appendChild(likeButton);
 
-            function addLike(event) {
+            function addLike(event, kitten) {
                 if (event.target.textContent === EMPTY_HEART) {
                     event.target.textContent = FULL_HEART;
+                    renderFavoriteKitten(kitten);
                 }
                 else {
                     event.target.textContent = EMPTY_HEART;
+                    const selectedImage = (document.getElementById(`${kitten.image}`));
+                    selectedImage.remove();
                 }
                 }
                 
-            let favoriteKittensArea = document.getElementById("favorite-kittens");
-            let favoriteKittensArray = [];
-            
-
+            function renderFavoriteKitten(kitten) {
+                let favoriteKittensArea = document.getElementById("favorite-kittens");
+                    const image = document.createElement("img");
+                    image.id = `${kitten.image}`;
+                    image.src = kitten.image;
+                    favoriteKittensArea.append(image);
+                }
             }
         }
 )
