@@ -1,16 +1,30 @@
 const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 const allKittens = [];
+const orangeKittens = [];
+const blackKittens = [];
+const whiteKittens = [];
+const grayKittens = [];
+const tuxedoKittens = [];
 
 document.addEventListener("DOMContentLoaded", () => {
     fetch("http://localhost:3000/kittens")
     .then((response) => response.json())
     .then((data) => data.forEach(renderKittens))
+    
+    const kittenColorDropDown = document.getElementById("kitten-color");
+
+    kittenColorDropDown.addEventListener("change", (event) => {
+        const result = allKittens.filter(kitten => kitten.color === event.target.value);
+        let kittenCollection = document.getElementById("kitten-collection");
+        kittenCollection.textContent = "";
+        result.forEach(renderKittens);
+
+    })
 
     function renderKittens(kitten) {
 
-        
-        
+        allKittens.push(kitten);
         
         let card = document.createElement("div");
         card.classList.add("card");
@@ -56,50 +70,4 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
     
-    function dropDownKittens(kitten) {
-    const orangeKittens = [];
-    const blackKittens = [];
-    const whiteKittens = [];
-    const grayKittens = [];
-    const tuxedoKittens = [];
-
-    allKittens.push(kitten);
-
-    allKittens.filter(sortKittens);
-    
-    function sortKittens(kitten) {
-
-        if (kitten.color === "orange") {
-            orangeKittens.push(kitten);
-        }
-        else if (kitten.color === "black") {
-            blackKittens.push(kitten);
-        }
-        else if (kitten.color === "white") {
-            whiteKittens.push(kitten);
-        }
-        else if (kitten.color === "gray") {
-            grayKittens.push(kitten);
-        }
-        else if (kitten.color === "tuxedo") {
-            tuxedoKittens.push(kitten);
-        }
-    }
-    
-    // currently trying to implement this event listener to display each type of kitten ONLY, and hide the others. It is not going well.
-
-    // function displayKittensByColor() {
-    //     const dropDownValue = document.getElementById("kitten-color").value;
-        const kittenColorDropDown = document.getElementById("kitten-color");
-        console.log(kittenColorDropDown);
-    //     kittenColor.addEventListener("change", (event) => {
-    //         if (kittenColor === "orange") {
-    //             document.remove(grayKittens);
-    //             document.remove(blackKittens);
-    //             document.remove(whiteKittens);
-    //             document.remove(tuxedoKittens);
-    //         }
-    //     })
-    // }
-    }
 })
