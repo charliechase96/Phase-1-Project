@@ -105,8 +105,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // grab "Kittens!" text element
             const h1 = document.getElementById("kittens");
-            
-            // add mouseover event changing text color to white on hover
+
+            // add mouseover event changing text color to purple on hover
             h1.addEventListener("mouseover", event => {
                 h1.style.color = "MediumPurple";
             });
