@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch("http://localhost:3000/kittens")
     .then((response) => response.json())
     .then((data) => data.forEach(renderKittens))
+
         function renderKittens(kitten) {
             let card = document.createElement("div");
             card.classList.add("card");
@@ -22,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
             likeButton.addEventListener("click", (event) => {
                 addLike(event);
             })
+
             likeButton.classList.add("like-btn");
             likeButton.setAttribute("id", `${kitten.id}`);
             likeButton.textContent = EMPTY_HEART;
@@ -36,12 +38,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
                 }
                 
-                let favoriteKittensArea = document.getElementById("favorite-kittens");
-                let favoriteKittens = [];
-
-                if (kittenImg.childNodes.textContent === FULL_HEART) {
-                    console.log(kittenImg);
-                }
+            let favoriteKittensArea = document.getElementById("favorite-kittens");
+            let favoriteKittens = [];
+            
+            
             }
         }
 )
