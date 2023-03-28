@@ -9,14 +9,10 @@
     </head>
     <body>
         <h1>Kittens!</h1>
-        <div id="kitten-collection"></div>
-
-        <h1>Your Favorite Kittens</h1>
-        <div id="favorite-kittens"></div>
-
-        <div class="container">
+        
+        <div class="container" id="form-container">
             <form class="sort-kitten-form">
-              <h3>Sort your favorite kittens by color!</h3>
+              <h3>Sort kittens by color!</h3>
 
             <label for="sorting kittens">Choose a fur color:</label>
             
@@ -27,13 +23,20 @@
                 <option value="gray">Gray</option>
                 <option value="tuxedo">Tuxedo</option>
             </select>
-            
+
             <input
           type="submit"
           name="submit"
           value="Sort Kittens!"
           class="submit"
           />
+        </div>
+
+        <div id="kitten-collection"></div>
+
+        <h1>Your Favorite Kittens</h1>
+        <div id="favorite-kittens"></div>
+
 
         <script src="script.js"></script>
     </body>
