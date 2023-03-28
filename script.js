@@ -63,10 +63,13 @@ document.addEventListener("DOMContentLoaded", () => {
         
         function renderFavoriteKitten(kitten) {
             let favoriteKittensArea = document.getElementById("favorite-kittens");
+            let card = document.createElement("div");
+            favoriteKittensArea.append(card);
+            card.classList.add("card");
             const image = document.createElement("img");
             image.id = `${kitten.image}`;
             image.src = kitten.image;
-            favoriteKittensArea.append(image);
+            card.append(image);
         }
     }
     
