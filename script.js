@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
             kittenImg.src = `${kitten.image}`;
             card.appendChild(kittenImg);
             kittenImg.classList.add("kitten-avatar");
+            kittenImg.setAttribute("id", `${kitten.id}`);
 
             let likeButton = document.createElement("button");
             likeButton.addEventListener("click", (event) => {
@@ -35,5 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
                 }
             }
+            
+            let favoriteKittens = document.getElementById("favorite-kittens");
         }
 )

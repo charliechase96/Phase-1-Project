@@ -25,8 +25,8 @@ img {
     float: left;
     width: 275px;
     height: 325px;
-    padding: 10 10px;
+    padding: 10px 10px 10px 10px;
     margin: 10px;
-    background-color: white;
+    background-color: lavenderblush;
     align-items: center;
 }
