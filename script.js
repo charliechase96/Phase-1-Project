@@ -39,9 +39,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
                 
             let favoriteKittensArea = document.getElementById("favorite-kittens");
-            let favoriteKittens = [];
+            let favoriteKittensArray = [];
             
-            
+
             }
         }
 )
