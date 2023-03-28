@@ -18,14 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
             allKittens.push(kitten);
 
             allKittens.filter(sortKittens);
-            // console.log(orangeKittens);
-            // console.log(blackKittens);
-            // console.log(whiteKittens);
-            console.log(grayKittens);
-            // console.log(tuxedoKittens);
             
             function sortKittens(kitten) {
-                let kittenColor = document.getElementById("kitten-color").value;
 
                 if (kitten.color === "orange") {
                     orangeKittens.push(kitten);
@@ -44,6 +38,20 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             }
             
+            // currently trying to implement this event listener to display each type of kitten ONLY, and hide the others. It is not going well.
+
+            // function displayKittensByColor() {
+            //     const kittenColor = document.getElementById("kitten-color").value;
+            //     kittenColor.addEventListener("change", (event) => {
+            //         if (kittenColor === "orange") {
+            //             document.remove(grayKittens);
+            //             document.remove(blackKittens);
+            //             document.remove(whiteKittens);
+            //             document.remove(tuxedoKittens);
+            //         }
+            //     })
+            // }
+
             
             
             let card = document.createElement("div");
@@ -67,9 +75,6 @@ document.addEventListener("DOMContentLoaded", () => {
             likeButton.setAttribute("id", `${kitten.id}`);
             likeButton.textContent = EMPTY_HEART;
             card.appendChild(likeButton);
-            
-            // below function was supposed to push kittens to array but does nothing
-
             
             
             function addLike(event, kitten) {
