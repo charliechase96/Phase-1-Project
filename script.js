@@ -5,7 +5,11 @@ const allKittens = [];
 document.addEventListener("DOMContentLoaded", () => {
 
     
-    fetch("http://localhost:3000/kittens")
+    fetch("https://api.jsonbin.io/b/658128f41f5677401f0fa12e", {
+        headers: {
+            'secret-key': '$2a$10$1f3EFonz5mcqbi.r83S4YuxFhSBkJ9CFVVJ5OVEcqlnjF9wIqMIVO'
+        }
+    })
     .then((response) => response.json())
     .then((data) => {
         console.log(9);
